@@ -1,0 +1,50 @@
+--- inserting the values into the customers---
+INSERT INTO Customers(customer_name,email,phone,registration_date) VALUES
+('Rahul Sharma','rahul@gmail.com','9876543210','2026-05-01'),
+('Priya Reddy','priya@gmail.com','9876543211','2026-05-03'),
+('Amit Kumar','amit@gmail.com','9876543212','2026-05-05'),
+('Sneha Patel','sneha@gmail.com','9876543213','2026-05-08'),
+('Arjun Rao','arjun@gmail.com','9876543214','2026-05-10'),
+('Kiran Das','kiran@gmail.com','9876543215','2026-05-12');
+
+ --- inserting the values into the address---
+ INSERT INTO Address(customer_id,adress_type,city,state,pincode) VALUES
+(1,'Home','Hyderabad','Telangana',500001),
+(2,'Home','Visakhapatnam','Andhra Pradesh',530001),
+(3,'Office','Bengaluru','Karnataka',560001),
+(4,'Home','Chennai','Tamil Nadu',600001),
+(5,'Office','Mumbai','Maharashtra',400001);
+
+--- inserting the values into the categories---
+INSERT INTO Categories(category_name,parent_category_id) VALUES
+('Electronics',NULL),
+('Mobiles',1),
+('Laptops',1),
+('Fashion',NULL),
+('Men Clothing',4),
+('Women Clothing',4),
+('Home Appliances',NULL),
+('Books',NULL);
+
+--- inserting the values into the suppliers ---
+INSERT INTO Suppliers(supplier_name,email,phone) VALUES
+('TechWorld','techworld@gmail.com',1111111111),
+('MobileHub','mobilehub@gmail.com',2222222222),
+('FashionMart','fashion@gmail.com',3333333333),
+('HomeStore','home@gmail.com',4444444444);
+
+--- inserting the values into the products---
+INSERT INTO Products(product_name,description,price,stock_quantity,category_id,supplier_id) VALUES
+('iPhone 15','Apple Smartphone',80000,20,2,2),
+('Samsung S24','Samsung Smartphone',75000,15,2,2),
+('OnePlus 13','OnePlus Smartphone',65000,8,2,2),
+('Dell Inspiron','Dell Laptop',60000,12,3,1),
+('HP Pavilion','HP Laptop',70000,10,3,1),
+('MacBook Air','Apple Laptop',95000,5,3,1),
+('Formal Shirt','Men Shirt',1500,50,5,3),
+('Blue Jeans','Men Jeans',2000,40,5,3),
+('Kurti','Women Wear',1200,30,6,3),
+('Washing Machine','LG Washer',30000,7,7,4),
+('Refrigerator','Samsung Fridge',50000,6,7,4),
+('SQL Basics','Database Book',500,100,8,1),
+('Python Guide','Programming Book',700,90,8,1);
