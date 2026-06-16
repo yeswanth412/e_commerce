@@ -12,7 +12,7 @@ from products
 where stock_quantity < 10;
 
 -- display all suppliers--
-select *  from suppliers
+select *  from suppliers;
 
 --display complete orders--
 select * 
